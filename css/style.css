@@ -1,0 +1,266 @@
+/* ------------------------------------------------------
+                    Google Poppins font link  
+  -------------------------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+  /* ------------------------------------------------------------
+                        Common style
+  ----------------------------------------------------------------  */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* ---------------------------------------------------------------
+                        Header Design  
+------------------------------------------------------------------- */
+/* .header-container{
+    display: flex;
+    background-color: #2D25A0;
+    background-size: cover;
+    align-items: center;
+    padding: 100px 150px;
+    justify-content: space-between;
+} */
+header{
+    background-color: #2D25A0;
+    background-size: cover;
+}
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 100px 150px;
+
+}
+h1{
+font-size: 64px;
+color: #ffffffff;
+width: 485px;
+}
+.header-btn{
+    color: #ffffffff;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    padding: 10px, 24px, 10px, 24px;
+}
+.header-btn:hover i{
+    transform: translate(20px);
+    transition: transform, 2s;
+
+}
+.header-btn:hover {
+    background-image: linear-gradient(to right, #2D25A0, #5DADE2);
+    cursor: pointer;
+}
+.header-image img{
+    width: 556px;
+    height: 438px;
+}
+/* ----------------------------------------------------------------------
+                    Main section and players style
+ ------------------------------------------------------------------------ */
+ .container{
+     display: flex;
+     justify-content: center;
+ }
+ .players{
+     padding-top: 70px;
+     padding-bottom: 70px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 30px;
+     grid-row-gap: 30px;
+     width: 1050px;
+
+ }
+ .player{
+    box-shadow:5px 5px 30px rgba(0, 0, 0, 0.30);
+    /* width: 330px;
+    height: 474px; */
+    padding: 20px;
+    border-radius: 5px;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player-name{
+    font-size: 28px;
+    color: #18191F;
+}
+.player-detail{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    width: 300px;
+}
+/* ------------------------------------------------------------------
+                   Extra Section Video Section Style
+   ------------------------------------------------------------------ */
+
+   .marquee{
+    background-color: #2D25A0;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.recent-vedios{
+     
+}
+.recent-vedios h2{
+    text-align: center;
+}
+.vedio-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vedios{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 1096px;
+}
+iframe{
+    width: 340px;
+    height: 180px;
+    padding-top: 10px;
+}
+.vedio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+}
+.vedio h3{
+    padding-left: 20px;
+}
+
+/* ----------------------------------------------------------
+                        Footer design
+   ----------------------------------------------------------- */
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+footer img{
+    width: 484px;
+    height: 110px;
+}
+.socil-link{
+    /* background-color: #1e3bc8;
+    width: 32px;
+    height: 32px;
+    opacity: 10%; */
+}
+.socil-link a{
+    padding: 7px 10px;
+    border-radius: 50%;
+    opacity: 30%;
+    background-color: #969BAB;
+
+}
+.socil{
+    color: #0B0D17 ;
+}
+/* ------------------------------------------------------------
+                        Media queries
+   ------------------------------------------------------------ */
+
+/* -----------------------------------------
+                Mobile device
+   ----------------------------------------- */
+
+@media only screen and (max-width:688px){
+
+    .header-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 0;
+        padding-left: 50px;
+    }
+    .header-title{
+        padding: 16px;
+    }
+    h1{
+        font-size: 36px;
+        width: 278px;
+        height: 138px;
+    }
+    .header-btn{
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+    .header-image img{
+        width: 329px;
+        height: 259px;
+        padding: 15px;
+        padding-bottom: 50px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .vedios{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer img{
+        width: 280px;
+        height: 90px;
+    }
+    
+}
+
+/* ---------------------------------------------
+                tablet devices
+   --------------------------------------------- */
+@media only screen and (min-width:689px) and (max-width:991px){
+    
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .header-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-left: 140px;
+    }
+    h1{
+        font-size: 50px;
+
+    }
+    .header-image img{
+        padding-top: 100px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .vedios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+}
